@@ -1,4 +1,4 @@
 from django.contrib import admin
-from guest_book_app.models import GuestBook
+from guest_book_app.models import GuestBook, ArticleAdmin
 
-admin.site.register(GuestBook)
+admin.site.register(GuestBook, ArticleAdmin)
