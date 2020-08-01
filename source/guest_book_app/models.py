@@ -1,9 +1,9 @@
 from django.db import models
 
-STATUSES = {
-    'active': 'Активно',
-    'blocked': 'Заблокировано'
-}
+STATUSES = [
+    ('active', 'Активно'),
+    ('blocked', 'Заблокировано')
+]
 class GuestBook(models.Model):
     name = models.CharField(max_length=50, null=False, blank=False, verbose_name='Имя автора записи')
     inbox = models.EmailField(max_length=50, null=False, blank=False, verbose_name='Адрес электронной почты')
